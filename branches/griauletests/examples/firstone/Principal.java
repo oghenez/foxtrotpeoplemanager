@@ -26,7 +26,7 @@ import com.griaule.grfingerjava.Template;
 
 public class Principal implements IStatusEventListener, IImageEventListener, IFingerEventListener {
 
-    private FrmPrincipal ui;
+    private frm_principal ui;
     private FingerprintImage img_impressaodigital;
     private Template template;
     private MatchingContext fingerprintSDK;
@@ -50,7 +50,7 @@ public class Principal implements IStatusEventListener, IImageEventListener, IFi
     public Principal() {
     
         //inicializando variaveis
-        ui = new FrmPrincipal(this);
+        ui = new frm_principal();
         ui.setVisible(true);
         // dizendo a dll da griaule onte esta a licenca para uso...
 
@@ -71,7 +71,7 @@ public class Principal implements IStatusEventListener, IImageEventListener, IFi
     //config DB
     private void initDB() {
         String servidor = "127.0.0.1";
-        String bd = "foxtrot";
+        String bd = "biometria";
         String user = "root";
         String senha = "";
         try {
@@ -82,14 +82,14 @@ public class Principal implements IStatusEventListener, IImageEventListener, IFi
             dbCon = DriverManager.getConnection("jdbc:mysql://" + servidor + "/" + bd, user, senha);
 
             //Preparedestatments que seram utilizados para inserÃ§Ãµes 
-            enrollStmt = dbCon.prepareStatement("INSERT INTO fingerprints(template, id_hand, id_finger, name) values(?, ?, ?, ?)");
-            insertedIdStmt = dbCon.prepareStatement("SELECT MAX(ID) FROM fingerprints");
-            identifyStmt = dbCon.prepareStatement("SELECT * FROM fingerprints");
-            clearDbStmt = dbCon.prepareStatement("DELETE FROM fingerprints");
-            verifyStmt = dbCon.prepareStatement("SELECT template FROM fingerprints WHERE ID=?");
+            enrollStmt = dbCon.prepareStatement("INSERT INTO teste_impressoes(template, id_mao, id_dedo, nome) values(?, ?, ?, ?)");
+            insertedIdStmt = dbCon.prepareStatement("SELECT MAX(ID) FROM teste_impressoes");
+            identifyStmt = dbCon.prepareStatement("SELECT * FROM teste_impressoes");
+            clearDbStmt = dbCon.prepareStatement("DELETE FROM teste_impressoes");
+            verifyStmt = dbCon.prepareStatement("SELECT template FROM teste_impressoes WHERE ID=?");
            
             //Preparedestatments que seram utilizados pelo sensor
-            getSensor = dbCon.prepareStatement("SELECT * FROM sensors WHERE Id =?");
+            getSensor = dbCon.prepareStatement("SELECT * FROM sensores WHERE Id =?");
             
             
             
@@ -285,10 +285,10 @@ public class Principal implements IStatusEventListener, IImageEventListener, IFi
                 if (matched) {
                     //displays minutiae/segments/directions that matched.
                     //Notifies the template was identified.
-                    ui.add_lineInLog("Impressão identificada! Score de identificação = " + fingerprintSDK.getScore() + " ID = " + rs.getInt("ID")+" Nome: "+rs.getString("name"));
+                    ui.add_lineInLog("Impressão identificada! Score de identificação = " + fingerprintSDK.getScore() + " ID = " + rs.getInt("ID")+" Nome: "+rs.getString("nome"));
 
-                    ui.updateform(rs.getInt("id_hand"), rs.getInt("id_finger"));
-                    ui.set_nome(rs.getString("name"));
+                    ui.updateform(rs.getInt("id_mao"), rs.getInt("id_dedo"));
+                    ui.set_nome(rs.getString("nome"));
 
                     ui.set_imagemcomgrafo(GrFingerJava.getBiometricImage(template, img_impressaodigital, fingerprintSDK));
                     //Stops searching
@@ -306,7 +306,6 @@ public class Principal implements IStatusEventListener, IImageEventListener, IFi
         } catch (SQLException e) {
             //write error to log            
             ui.add_lineInLog("Erro ao acessar o bd");
-            e.printStackTrace();
         } catch (GrFingerJavaException e) {
             //write error to log
             System.out.println(e.getMessage());
