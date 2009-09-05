@@ -1,16 +1,13 @@
 #labels Phase-Implementation
 #Página para informações sobre o ambiente.
 
-= Ambiente =
-
-
 = IDE =
 Eclipse Ganymede
-* *Plugins*
-  * Checkstyle: _plugin para padronizar o código_
-  * SVN Subversion: _plugin para sincronização_
++ *Plugins*
+  + Checkstyle: _plugin para padronizar o código_
+  + SVN Subversion: _plugin para sincronização_
 
 
 = Base de Dados =
 [Nome do Banco]
-  * Nomes das tecnologias string de conexao etc....
+  + Nomes das tecnologias string de conexao etc....
