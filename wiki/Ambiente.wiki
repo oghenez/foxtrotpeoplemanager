@@ -6,7 +6,7 @@ Eclipse Ganymede
 <br/><br/>
 * Plugins
   * Checkstyle: *_plugin para padronizar o código_*
-  * SVN Subversion: *_plugin para sincronização_*
+  * SVN Subversion: *_plugin para sincronização_* (http://subclipse.tigris.org/update_1.6.x)
 
 
 = Base de Dados =
