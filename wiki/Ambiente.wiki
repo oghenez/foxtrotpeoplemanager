@@ -2,12 +2,13 @@
 #Página para informações sobre o ambiente.
 
 = IDE =
-Eclipse Ganymede
-+ *Plugins*
-  + Checkstyle: _plugin para padronizar o código_
-  + SVN Subversion: _plugin para sincronização_
+Eclipse Ganymede 
+<br/><br/>
+* Plugins
+  * Checkstyle: *_plugin para padronizar o código_*
+  * SVN Subversion: *_plugin para sincronização_*
 
 
 = Base de Dados =
-[Nome do Banco]
-  + Nomes das tecnologias string de conexao etc....
+Nome do Banco
+  * Nomes das tecnologias string de conexao etc....
