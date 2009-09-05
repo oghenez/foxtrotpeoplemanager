@@ -3,7 +3,7 @@
 <br/><br/>
 
 = IDE = 
-<br/><br/>
+<br/>
 
 == Eclipse Ganymede == 
 <br/>
@@ -18,7 +18,7 @@
 
 <br/> 
 = Base de Dados = 
-<br/><br/>
+<br/>
 
 === Nome do Banco ===
   * Nomes das tecnologias string de conexao etc....
