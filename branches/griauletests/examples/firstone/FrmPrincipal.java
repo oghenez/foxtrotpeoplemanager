@@ -4,7 +4,7 @@
  * Created on 21 de Março de 2008, 11:45
  */
 
-package branches.griauletests.example;
+package branches.griauletests.examples.firstone;
 
 import java.awt.image.BufferedImage;
 
