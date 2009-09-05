@@ -1,15 +1,23 @@
 #labels Phase-Implementation
 #Página para informações sobre o ambiente.
 
-= IDE =
-Eclipse Ganymede 
+= IDE = 
 <br/><br/>
-* Plugins
-  * Checkstyle:** _plugin para padronizar o código_
 
-  * SVN Subversion:* _plugin para sincronização_ 
+== Eclipse Ganymede == 
+<br/>
+
+
+* Plugins
+
+  *  *Checkstyle:* plugin para padronizar o código
+
+  *  *SVN Subversion:* plugin para sincronização 
     Para download no eclipse clique em help>>update e insira o site (http://subclipse.tigris.org/update_1.6.x)
 
-= Base de Dados =
-Nome do Banco
+<br/> 
+= Base de Dados = 
+<br/><br/>
+
+=== Nome do Banco ===
   * Nomes das tecnologias string de conexao etc....
