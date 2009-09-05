@@ -2,9 +2,6 @@
 #Página para informações sobre o ambiente.
 <br/><br/>
 
-= IDE = 
-<br/>
-
 == Eclipse Ganymede == 
 <br/>
 
@@ -16,8 +13,6 @@
   *  *SVN Subversion:* plugin para sincronização 
     Para download no eclipse clique em help>>update e insira o site (http://subclipse.tigris.org/update_1.6.x)
 
-<br/> 
-= Base de Dados = 
 <br/>
 
 === Nome do Banco ===
