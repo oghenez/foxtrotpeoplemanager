@@ -1,6 +1,6 @@
 
 
-package branches.griauletests.examples.firstone;
+package branches.griauletests.firstone;
 
 /**
  *

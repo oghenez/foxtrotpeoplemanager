@@ -4,7 +4,7 @@
  * Created on 21 de Março de 2008, 11:45
  */
 
-package branches.griauletests.examples.firstone;
+package branches.griauletests.firstone;
 
 import java.awt.image.BufferedImage;
 
@@ -245,7 +245,7 @@ public class frm_principal extends javax.swing.JFrame {
 }//GEN-LAST:event_jRadioButton1ActionPerformed
     public void limpaForm(){
  
-    lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/biometria_bd/imagens/mao.jpg")));
+    lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/branches/griauletests/examples/firstone/images/mao.jpg")));
     
     }
     
@@ -286,7 +286,7 @@ public class frm_principal extends javax.swing.JFrame {
        default: nomemao=""; break;
    }
    //tornar padrão depois...
-   lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/biometria_bd/imagens/" +nomemao+"-"+String.valueOf(id_dedo)+".png")));
+   lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/branches/griauletests/examples/firstone/images/" +nomemao+"-"+String.valueOf(id_dedo)+".png")));
 
    
    }
