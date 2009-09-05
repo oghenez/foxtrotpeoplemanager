@@ -16,12 +16,12 @@ import javax.swing.ImageIcon;
  * @author  Matheus Motta
  * 
  */
-public class frm_principal extends javax.swing.JFrame {
+public class FrmPrincipal extends javax.swing.JFrame {
       //The image of the current fingerprint.
    private BufferedImage fingerprintImage = null;
 
 
-    public frm_principal() {
+    public FrmPrincipal() {
         initComponents();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }

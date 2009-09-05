@@ -26,7 +26,7 @@ import com.mysql.jdbc.Connection;
 public class Principal implements IStatusEventListener, IImageEventListener,
 		IFingerEventListener {
 
-	private frm_principal ui;
+	private FrmPrincipal ui;
 	private FingerprintImage img_impressaodigital;
 	private Template template;
 	private MatchingContext fingerprintSDK;
@@ -49,7 +49,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 	public Principal() {
 
 		// inicializando variaveis
-		ui = new frm_principal();
+		ui = new FrmPrincipal();
 		ui.setVisible(true);
 		// dizendo a dll da griaule onte esta a licenca para uso...
 
