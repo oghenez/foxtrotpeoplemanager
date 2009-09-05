@@ -1,0 +1,23 @@
+#labels Phase-Implementation
+#Página de informações sobre o finger print. APIs, Tutoriais, etc...
+
+== Introdução ==
+
+O SDK usado é o da Griaule (Site)
+
+
+== JavaDoc ==
+
+O JavaDoc da principal api se encontra em: link
+
+
+== Tutoriais ==
+
+  *  *Leitura de dados com o Griaule SDK*
+      Este tutorial diz respeito a.... Maiores detalhes em: 
+
+  *  *Modificando critérios de processamento*
+      Este tutorial diz respeito a.... Maiores detalhes em: link
+
+  * *Trabalhando com Templates*
+       Este tutorial diz respeito a.... Maiores detalhes em: link
