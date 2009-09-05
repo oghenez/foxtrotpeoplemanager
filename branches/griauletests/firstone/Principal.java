@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package branches.griauletests.firstone;
+package griauletests.firstone;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
