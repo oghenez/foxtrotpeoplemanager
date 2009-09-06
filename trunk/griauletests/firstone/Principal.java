@@ -53,7 +53,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 		ui.setVisible(true);
 		// dizendo a dll da griaule onte esta a licenca para uso...
 
-		// Era s� isso....
+		// Era s� isso....
 		String grFingerNativeDirectory = System.getProperty("user.dir");
 
 		grFingerNativeDirectory = grFingerNativeDirectory
@@ -109,7 +109,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			ui.add_lineInLog("N�o foi possivel conectar em " + servidor
+			ui.add_lineInLog("Não foi possivel conectar em " + servidor
 					+ " com o login " + user);
 			System.out.println(e);
 		}
@@ -158,7 +158,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 		} catch (GrFingerJavaException ex) {
 			ui
-					.add_lineInLog(">>N�o foi poss�vel finalizar a opera��o de saida");
+					.add_lineInLog(">>Não foi possível finalizar a operação de saida");
 		}
 
 	}
@@ -177,23 +177,22 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 			Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null,
 					ex);
 		}
-		ui.add_linetosenrorlog("Localizando sensor no DB");
-
-		try {
-			getSensor.setString(1, id_sensor);
-			ResultSet rs = getSensor.executeQuery();
-			// terminar de receber consulta e exibir se o id do sensor ja existe
-		} catch (SQLException ex) {
-			Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null,
-					ex);
-		}
-		// ResultSet rs =
-
+		initDB();
+		/*
+		 * ui.add_linetosenrorlog("Localizando sensor no DB");
+		 * 
+		 * try { getSensor.setString(1, id_sensor); ResultSet rs =
+		 * getSensor.executeQuery(); // terminar de receber consulta e exibir se
+		 * o id do sensor ja existe } catch (SQLException ex) {
+		 * Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null,
+		 * ex); } // ResultSet rs =
+		 */
 	}
 
 	// Sensor removido
 	public void onSensorUnplug(String id_sensor) {
 		ui.add_lineInLog("O sensor \"" + id_sensor + "\" foi removido");
+		initDB();
 
 	}
 
@@ -273,13 +272,13 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 			// Qual ID foi associado ao template que foi extraido
 			ResultSet rs = insertedIdStmt.executeQuery();
 			rs.next();
-			ui.add_lineInLog("Nova impress�o salva no BD com ID = "
+			ui.add_lineInLog("Nova impressão salva no BD com ID = "
 					+ Integer.toString(rs.getInt(1)) + " Nome: "
 					+ ui.get_nome());
 
 		} catch (SQLException e) {
 			System.out.println(e);
-			ui.add_lineInLog("N�o foi poss�vel salvar no BD");
+			ui.add_lineInLog("Não foi possível salvar no BD");
 		}
 	}
 
@@ -307,7 +306,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 					// displays minutiae/segments/directions that matched.
 					// Notifies the template was identified.
 					ui
-							.add_lineInLog("Impress�o identificada! Score de identifica��o = "
+							.add_lineInLog("Impressão identificada! Score de identificação = "
 									+ fingerprintSDK.getScore()
 									+ " ID = "
 									+ rs.getInt("ID")
@@ -319,6 +318,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 					ui.set_imagemcomgrafo(GrFingerJava.getBiometricImage(
 							template, img_impressaodigital, fingerprintSDK));
+
 					// Stops searching
 					return true;
 				}
@@ -326,15 +326,17 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 			// If all templates on the DB have been compared, and none of them
 			// match, notifies it has not been found.
-			ui.add_lineInLog("Impress�o n�o localizada no BD");
+			ui.add_lineInLog("Impressão não localizada no BD");
 			ui.set_imagemcomgrafo(null);
 			ui.limpaForm();
 			return false;
 
 		} catch (SQLException e) {
+			e.printStackTrace();
 			// write error to log
 			ui.add_lineInLog("Erro ao acessar o bd");
 		} catch (GrFingerJavaException e) {
+			e.printStackTrace();
 			// write error to log
 			System.out.println(e.getMessage());
 		}
