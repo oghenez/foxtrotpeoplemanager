@@ -158,8 +158,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
 																394,
 																Short.MAX_VALUE))
 										.addContainerGap()));
-		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(Principal.class.getResource(
-				"images/mao.jpg"))); // NOI18N
+		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(Principal.class
+				.getResource("images/mao.jpg"))); // NOI18N
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(
 				jPanel1);
@@ -404,8 +404,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
 	public void limpaForm() {
 
-		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
-				"/trunk/griauletests/examples/firstone/images/mao.jpg")));
+		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(Principal.class
+				.getResource("images/mao.jpg")));
 
 	}
 
@@ -455,8 +455,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
 			break;
 		}
 		// tornar padrão depois...
-		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
-				"/trunk/griauletests/examples/firstone/images/" + nomemao + "-"
+		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(Principal.class
+				.getResource("images/" + nomemao + "-"
 						+ String.valueOf(id_dedo) + ".png")));
 
 	}
