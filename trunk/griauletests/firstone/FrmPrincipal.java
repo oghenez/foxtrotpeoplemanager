@@ -82,7 +82,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
 		list_dedos.setModel(new javax.swing.AbstractListModel() {
 			String[] strings = { "1 - Polegar", "2 - Dedo Indicador",
-					"3 - Dedo m�dio", "4 - Dedo Anelar", "5 - Dedo m�nimo" };
+					"3 - Dedo médio", "4 - Dedo Anelar", "5 - Dedo mínimo" };
 
 			public int getSize() {
 				return strings.length;
@@ -95,7 +95,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 		jScrollPane2.setViewportView(list_dedos);
 
 		cbox_mao.setModel(new javax.swing.DefaultComboBoxModel(new String[] {
-				"M�o esquerda", "M�o direita" }));
+				"Mão esquerda", "Mão direita" }));
 		cbox_mao.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				cbox_maoActionPerformed(evt);
@@ -186,7 +186,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 			}
 		});
 
-		jRadioButton2.setText("Salvar se n�o existir");
+		jRadioButton2.setText("Salvar se não existir");
 
 		rb_vergrafo.setText("Ver template");
 
