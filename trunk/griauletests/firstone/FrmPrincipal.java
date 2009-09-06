@@ -53,7 +53,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 		tx_sensores = new javax.swing.JTextArea();
 
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-		setTitle("Foxtrot... O início");
+		setTitle("Foxtrot... O inï¿½cio");
 		addWindowListener(new java.awt.event.WindowAdapter() {
 			public void windowClosing(java.awt.event.WindowEvent evt) {
 				formWindowClosing(evt);
@@ -82,7 +82,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
 		list_dedos.setModel(new javax.swing.AbstractListModel() {
 			String[] strings = { "1 - Polegar", "2 - Dedo Indicador",
-					"3 - Dedo médio", "4 - Dedo Anelar", "5 - Dedo mínimo" };
+					"3 - Dedo mï¿½dio", "4 - Dedo Anelar", "5 - Dedo mï¿½nimo" };
 
 			public int getSize() {
 				return strings.length;
@@ -95,7 +95,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 		jScrollPane2.setViewportView(list_dedos);
 
 		cbox_mao.setModel(new javax.swing.DefaultComboBoxModel(new String[] {
-				"Mão esquerda", "Mão direita" }));
+				"Mï¿½o esquerda", "Mï¿½o direita" }));
 		cbox_mao.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				cbox_maoActionPerformed(evt);
@@ -160,7 +160,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 										.addContainerGap()));
 
 		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
-				"/branches/griauletests/examples/firstone/images/mao.jpg"))); // NOI18N
+				"images/mao.jpg"))); // NOI18N
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(
 				jPanel1);
@@ -187,7 +187,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 			}
 		});
 
-		jRadioButton2.setText("Salvar se não existir");
+		jRadioButton2.setText("Salvar se nï¿½o existir");
 
 		rb_vergrafo.setText("Ver template");
 
@@ -406,7 +406,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 	public void limpaForm() {
 
 		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
-				"/branches/griauletests/examples/firstone/images/mao.jpg")));
+				"/trunk/griauletests/examples/firstone/images/mao.jpg")));
 
 	}
 
@@ -457,7 +457,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 		}
 		// tornar padrÃ£o depois...
 		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
-				"/branches/griauletests/examples/firstone/images/" + nomemao
+				"/trunk/griauletests/examples/firstone/images/" + nomemao
 						+ "-" + String.valueOf(id_dedo) + ".png")));
 
 	}
