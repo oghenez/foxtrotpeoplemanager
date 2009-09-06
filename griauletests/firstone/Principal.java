@@ -53,7 +53,10 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 		ui.setVisible(true);
 		// dizendo a dll da griaule onte esta a licenca para uso...
 
-		String grFingerNativeDirectory = "E:\\DropBox\\My Dropbox\\Resources\\Griaule\\Fingerprint SDK Java 2009\\bin";
+		System.out.println(this.getClass().getResource("Griaule/Fingerprint SDK Java 2009/bin").toString());
+		
+		String grFingerNativeDirectory = this.getClass().getResource("Griaule/Fingerprint SDK Java 2009/bin").toString();
+
 		setFingerprintSDKNativeDirectory(grFingerNativeDirectory);
 		ui.add_lineInLog("End. da licensa griaule utilizada: "
 				+ grFingerNativeDirectory);
@@ -102,7 +105,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			ui.add_lineInLog("Não foi possivel conectar em " + servidor
+			ui.add_lineInLog("Nï¿½o foi possivel conectar em " + servidor
 					+ " com o login " + user);
 			System.out.println(e);
 		}
@@ -151,7 +154,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 		} catch (GrFingerJavaException ex) {
 			ui
-					.add_lineInLog(">>Não foi possível finalizar a operação de saida");
+					.add_lineInLog(">>Nï¿½o foi possï¿½vel finalizar a operaï¿½ï¿½o de saida");
 		}
 
 	}
@@ -266,13 +269,13 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 			// Qual ID foi associado ao template que foi extraido
 			ResultSet rs = insertedIdStmt.executeQuery();
 			rs.next();
-			ui.add_lineInLog("Nova impressão salva no BD com ID = "
+			ui.add_lineInLog("Nova impressï¿½o salva no BD com ID = "
 					+ Integer.toString(rs.getInt(1)) + " Nome: "
 					+ ui.get_nome());
 
 		} catch (SQLException e) {
 			System.out.println(e);
-			ui.add_lineInLog("Não foi possível salvar no BD");
+			ui.add_lineInLog("Nï¿½o foi possï¿½vel salvar no BD");
 		}
 	}
 
@@ -300,7 +303,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 					// displays minutiae/segments/directions that matched.
 					// Notifies the template was identified.
 					ui
-							.add_lineInLog("Impressão identificada! Score de identificação = "
+							.add_lineInLog("Impressï¿½o identificada! Score de identificaï¿½ï¿½o = "
 									+ fingerprintSDK.getScore()
 									+ " ID = "
 									+ rs.getInt("ID")
@@ -319,7 +322,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 			// If all templates on the DB have been compared, and none of them
 			// match, notifies it has not been found.
-			ui.add_lineInLog("Impressão não localizada no BD");
+			ui.add_lineInLog("Impressï¿½o nï¿½o localizada no BD");
 			ui.set_imagemcomgrafo(null);
 			ui.limpaForm();
 			return false;
