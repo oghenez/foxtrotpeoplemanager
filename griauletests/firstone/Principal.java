@@ -53,9 +53,13 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 		ui.setVisible(true);
 		// dizendo a dll da griaule onte esta a licenca para uso...
 
-		System.out.println(this.getClass().getResource("Griaule/Fingerprint SDK Java 2009/bin").toString());
-		
-		String grFingerNativeDirectory = this.getClass().getResource("Griaule/Fingerprint SDK Java 2009/bin").toString();
+		//Era só isso....
+		String grFingerNativeDirectory = System.getProperty("user.dir");
+
+		grFingerNativeDirectory = grFingerNativeDirectory
+				+ "/libs/Griaule/Fingerprint SDK Java 2009/bin/";
+
+		System.out.println(grFingerNativeDirectory);
 
 		setFingerprintSDKNativeDirectory(grFingerNativeDirectory);
 		ui.add_lineInLog("End. da licensa griaule utilizada: "
@@ -72,10 +76,10 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 
 	// config DB
 	private void initDB() {
-		String servidor = "127.0.0.1";
-		String bd = "biometria";
-		String user = "tests";
-		String senha = "";
+		String servidor = "200.234.202.125";
+		String bd = "csji2";
+		String user = "csji2";
+		String senha = "fox**bd";
 		try {
 			// ODBC driver.
 			Class.forName("com.mysql.jdbc.Driver");
