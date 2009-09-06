@@ -158,8 +158,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 																394,
 																Short.MAX_VALUE))
 										.addContainerGap()));
-
-		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
+		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(Principal.class.getResource(
 				"images/mao.jpg"))); // NOI18N
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(
@@ -457,8 +456,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
 		}
 		// tornar padrão depois...
 		lb_ver_dedo.setIcon(new javax.swing.ImageIcon(getClass().getResource(
-				"/trunk/griauletests/examples/firstone/images/" + nomemao
-						+ "-" + String.valueOf(id_dedo) + ".png")));
+				"/trunk/griauletests/examples/firstone/images/" + nomemao + "-"
+						+ String.valueOf(id_dedo) + ".png")));
 
 	}
 
