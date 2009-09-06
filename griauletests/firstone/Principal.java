@@ -78,8 +78,8 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 			Class.forName("com.mysql.jdbc.Driver");
 
 			// connectar a um BD
-			dbCon = (Connection) DriverManager.getConnection("jdbc:mysql://" + servidor
-					+ "/" + bd, user, senha);
+			dbCon = (Connection) DriverManager.getConnection("jdbc:mysql://"
+					+ servidor + "/" + bd, user, senha);
 
 			// Preparedestatments que seram utilizados para inserções
 			enrollStmt = dbCon
