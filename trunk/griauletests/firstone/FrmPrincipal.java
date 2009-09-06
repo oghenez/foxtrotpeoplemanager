@@ -53,7 +53,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 		tx_sensores = new javax.swing.JTextArea();
 
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-		setTitle("Foxtrot... O in�cio");
+		setTitle("Foxtrot... O início");
 		addWindowListener(new java.awt.event.WindowAdapter() {
 			public void windowClosing(java.awt.event.WindowEvent evt) {
 				formWindowClosing(evt);
