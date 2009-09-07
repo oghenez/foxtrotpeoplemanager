@@ -17,4 +17,7 @@
 <br/>
 
 === Nome do Banco ===
+* Ferramenta de modelagem:
+   *DBDesigner mysql Workbench (http://dev.mysql.com/downloads/workbench)
+
   * Nomes das tecnologias string de conexao etc....
