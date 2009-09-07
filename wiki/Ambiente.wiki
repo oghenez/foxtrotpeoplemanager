@@ -18,6 +18,6 @@
 
 === Nome do Banco ===
 * Ferramenta de modelagem:
-   *DBDesigner mysql Workbench (http://dev.mysql.com/downloads/workbench)
+   *DBDesigner mysql Workbench (http://dev.mysql.com/downloads/workbench) [Multiplataform]
 
   * Nomes das tecnologias string de conexao etc....
