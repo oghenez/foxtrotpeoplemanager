@@ -16,7 +16,7 @@
 
 <br/>
 
-=== Nome do Banco ===
+=== Banco de dados: MySQL ===
 * Ferramenta de modelagem:
    *DBDesigner mysql Workbench (http://dev.mysql.com/downloads/workbench) (Multiplataforma)
 
