@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="branches/|trunk/|tags/|libs/|libs/Griaule/|libs/Griaule/Fingerprint SDK Java 2009/|libs/Griaule/Fingerprint SDK Java 2009/bin/|libs/Mysql/|libs/Mysql/mysql-connector-java-5.1.5/|libs/Griaule/Fingerprint SDK Java 2009/bin/|libs/Mysql/mysql-connector-java-5.1.5/" kind="src" path=""/>
-	<classpathentry kind="src" path="branches"/>
-	<classpathentry kind="src" path="trunk"/>
-	<classpathentry kind="src" path="tags"/>
+	<classpathentry excluding="branches/|tags/|libs/|libs/Griaule/|libs/Griaule/Fingerprint SDK Java 2009/|libs/Griaule/Fingerprint SDK Java 2009/bin/|libs/Mysql/|libs/Mysql/mysql-connector-java-5.1.5/|libs/Griaule/Fingerprint SDK Java 2009/bin/|libs/Mysql/mysql-connector-java-5.1.5/" kind="src" path=""/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="libs/Griaule/Fingerprint SDK Java 2009/bin/grfingerjava.jar"/>
 	<classpathentry kind="lib" path="libs/Mysql/mysql-connector-java/mysql-connector-java-5.1.8-bin.jar"/>
