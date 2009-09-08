@@ -6,5 +6,4 @@
     <filter name="WriteProtectedFiles" enabled="true"/>
     <filter name="UnOpenedFiles" enabled="true"/>
     <filter name="FilesFromPackage" enabled="true"/>
-    <filter name="NonSrcDirs" enabled="true"/>
 </fileset-config>
