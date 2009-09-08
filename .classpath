@@ -6,6 +6,6 @@
 	<classpathentry kind="src" path="tags"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="libs/Griaule/Fingerprint SDK Java 2009/bin/grfingerjava.jar"/>
-	<classpathentry kind="lib" path="libs/Mysql/mysql-connector-java-5.1.5/mysql-connector-java-5.1.5-bin.jar"/>
+	<classpathentry kind="lib" path="libs/Mysql/mysql-connector-java/mysql-connector-java-5.1.8-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
