@@ -23,6 +23,7 @@ import com.griaule.grfingerjava.MatchingContext;
 import com.griaule.grfingerjava.Template;
 import com.mysql.jdbc.Connection;
 
+
 public class Principal implements IStatusEventListener, IImageEventListener,
 		IFingerEventListener {
 
@@ -142,7 +143,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 			// writes the error to log
 			ui.add_lineInLog(e.getMessage());
 		}
-
+		// Aqui jaz o sonho de fazer uma barra de loading...
 		while (c < 100) {
 			c++;
 			ui.set_barra(c);
@@ -319,6 +320,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 					ui.set_imagemcomgrafo(GrFingerJava.getBiometricImage(
 							template, img_impressaodigital, fingerprintSDK));
 
+					rs.close();
 					// Stops searching
 					return true;
 				}
@@ -329,6 +331,7 @@ public class Principal implements IStatusEventListener, IImageEventListener,
 			ui.add_lineInLog("Impressão não localizada no BD");
 			ui.set_imagemcomgrafo(null);
 			ui.limpaForm();
+			rs.close();
 			return false;
 
 		} catch (SQLException e) {
