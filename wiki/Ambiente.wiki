@@ -2,7 +2,7 @@
 #Página para informações sobre o ambiente.
 <br/><br/>
 
-== Eclipse Ganymede == 
+== IDE: Eclipse Ganymede == 
 <br/>
 
 
