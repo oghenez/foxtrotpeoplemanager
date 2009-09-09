@@ -10,6 +10,9 @@ O SDK usado é o da Griaule (Site)
 
 http://www.griaulebiometrics.com/page/en-us/manual/fingerprint-sdk
 
+== JavaDoc == 
+http://www.griaulebiometrics.com/javadoc/GrFingerJava/com/griaule/grfingerjava/package-summary.html
+
 
 == Tutoriais ==
 
