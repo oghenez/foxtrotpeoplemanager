@@ -6,9 +6,9 @@
 O SDK usado é o da Griaule (Site)
 
 
-== JavaDoc ==
+== Manual completo Fingerprint SDK Griaule ==
 
-O JavaDoc da principal api se encontra em: link
+http://www.griaulebiometrics.com/page/en-us/manual/fingerprint-sdk
 
 
 == Tutoriais ==
