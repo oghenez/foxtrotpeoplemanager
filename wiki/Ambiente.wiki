@@ -18,6 +18,6 @@
 
 === Banco de dados: MySQL ===
 * Ferramenta de modelagem:
-   *DBDesigner mysql Workbench (http://dev.mysql.com/downloads/workbench) (Multiplataforma)
+   *DBDesigner mysql Workbench (http://dev.mysql.com/downloads/workbench) (Multiplataforma) Versão 5.2.1
 
   * Nomes das tecnologias string de conexao etc....
