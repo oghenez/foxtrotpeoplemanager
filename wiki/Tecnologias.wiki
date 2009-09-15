@@ -6,6 +6,7 @@ Add your content here.
 
 
 == JBoss Seam ==
-
+Slide introdutório: 
+  * http://www.slideshare.net/yuvalb/jsf-and-seam
 Desenvolvimento JBoss Seam no Tomcat Passo-A-Passo (blog):
   * http://rodrigogalba.com.br/2009/04/12/desenvolvimento-jboss-seam-no-tomcat-passo-a-passo/
