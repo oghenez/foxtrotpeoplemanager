@@ -14,7 +14,7 @@
   *  *SVN Subversion:* plugin para sincronização 
     Para download no eclipse clique em help>>update e insira o site (http://subclipse.tigris.org/update_1.6.x)
 
-  * *Wireframe* plugin para sketch das telas.
+  * *Wireframe:* plugin para sketch das telas.
     Download no eclipse em: http://wireframesketcher.com/update
 <br/>
 
